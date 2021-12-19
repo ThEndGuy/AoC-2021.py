@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 
+def read_file(_file):
+    with open(_file, 'r') as f:
+       lines = [line.strip('\n') for line in f.readlines()]
+       for line in lines:
+           curr_line = line.split(' ')
+
 class Cell:
     def __init__(self, state=0):
         self.state = state
@@ -30,10 +36,11 @@ class Grid:
             for i in range(end, strt):
                 self.grid[i][row].add_cross()
 
-        
 
-G = Grid(10, 10)
-G.draw_line((1,2), (1,10))
-G.draw_line((1,0), (1,5))
-G.draw_line((1,2), (5,2))
-print(G.grid)
+    def find_above(self, num):
+        count = 0
+        for i, row in self.grid:
+            for j, col in row:
+               if col.state >= num:
+                   count += 1
+        return count
