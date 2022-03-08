@@ -18,10 +18,10 @@ You can also participate [here](https://adventofcode.com/2021)
 - [x] Day 5;
   - [x] Part 1;
   - [x] Part 2;
-<<<<<<< HEAD
 - [ ] Day 6;
   - [x] Part 1;
   - [ ] Part 2;
-=======
->>>>>>> cce3e07f55b88298c40a793b7af31ac7e1eb49d0
+- [ ] Day 7;
+  - [x] Part 1;
+  - [ ] Part 2;
 ...
